@@ -27,5 +27,29 @@ namespace _IPC2_HojaDeTrabajo1
 
 
         }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            string texto1, texto2;
+            string cadena = "";
+            char[] letras1, letras2;
+            texto1 = textBox1.Text;
+            texto2 = textBox2.Text;
+            letras1 = textBox1.Text.ToCharArray();
+            letras2 = textBox2.Text.ToCharArray();
+
+            for (int i = letras1.Length-1; i >=0; i--)
+            {
+                cadena += letras1[i].ToString();
+            }
+            cadena += "  ";
+            for (int i = letras2.Length-1; i >=0; i--)
+            {
+                cadena += letras2[i].ToString();
+            }
+
+            textBox3.Text = cadena;
+
+        }
     }
 }
