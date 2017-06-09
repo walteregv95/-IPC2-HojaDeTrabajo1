@@ -63,5 +63,19 @@ namespace _IPC2_HojaDeTrabajo1
             textBox4.Text = resultado.ToString();
 
         }
+
+        private void button3_Click(object sender, EventArgs e)
+        {
+            string cadena;
+            cadena = textBox1.Text;
+            if ((cadena.Contains('a') || cadena.Contains('A')) && (cadena.Contains('e') || cadena.Contains('E')) && (cadena.Contains('i') || cadena.Contains('I')) && (cadena.Contains('o') || cadena.Contains('O')) && (cadena.Contains('u') || cadena.Contains('U')))
+            {
+                textBox4.Text = "CUMPLE ";
+            }
+            else
+            {
+                textBox4.Text = "NO CUMPLE";
+            }
+        }
     }
 }
