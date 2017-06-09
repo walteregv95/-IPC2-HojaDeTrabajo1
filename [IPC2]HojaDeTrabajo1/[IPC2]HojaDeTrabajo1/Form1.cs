@@ -48,7 +48,7 @@ namespace _IPC2_HojaDeTrabajo1
                 cadena += letras2[i].ToString();
             }
 
-            textBox3.Text = cadena;
+            textBox3.Text = cadena+ "  201504403";   
 
         }
 
@@ -76,6 +76,11 @@ namespace _IPC2_HojaDeTrabajo1
             {
                 textBox4.Text = "NO CUMPLE";
             }
+        }
+
+        private void textBox4_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
