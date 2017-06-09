@@ -16,5 +16,10 @@ namespace _IPC2_HojaDeTrabajo1
         {
             InitializeComponent();
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
