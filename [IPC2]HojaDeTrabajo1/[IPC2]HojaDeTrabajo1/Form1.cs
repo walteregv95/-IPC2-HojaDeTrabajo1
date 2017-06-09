@@ -51,5 +51,17 @@ namespace _IPC2_HojaDeTrabajo1
             textBox3.Text = cadena;
 
         }
+
+        private void button4_Click(object sender, EventArgs e)
+        {
+            double numero1, numero2, numero3, resultado;
+            numero1 = Int32.Parse(textBox1.Text);
+            numero2 = Int32.Parse(textBox2.Text);
+            numero3 = Int32.Parse(textBox3.Text);
+
+            resultado = (numero3 * numero2) / numero1;
+            textBox4.Text = resultado.ToString();
+
+        }
     }
 }
